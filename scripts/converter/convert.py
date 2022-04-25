@@ -8,17 +8,6 @@ from pathlib import Path
 
 ASCII_CHARS = ['@', '#', 'S', '%', '?', '*', '+', ';', ':', ',', '.']
 
-
-
-# def list_dir(root_dir, recursive=True, show_hidden=False, subdir='', fileList=[]):
-#     # Make sure it's a full path
-#     root_dir = Path(root_dir).resolve()
-#     subdir_expanded = os.path.join(root_dir, subdir)
-
-
-
-
-
 def resize_image(image, new_width):
     width, height = image.size
     ratio = height / width
@@ -53,19 +42,6 @@ def main():
             f.write(i)
 
 
-
-
-
-
-
-
-
 if __name__ == '__main__':
     main()
-
-    # for root, dirs, files in os.walk('/Users/alan/workshop/_delete_after_checking/dotfiles/espanso'):
-    #     print(root)
-    #     print(dirs)
-    #     print(files)
-
 
